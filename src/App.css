@@ -1,0 +1,134 @@
+.App {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background: url('./event3.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+}
+
+
+.App-header {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 80px; 
+  box-sizing: border-box;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.form-group .inline-group {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+input,
+select {
+  padding: 10px;
+  width: calc(100% - 20px);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+span {
+  color: red;
+  margin-left: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: black;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+  align-self: center;
+  opacity: 0.8;
+}
+
+button:hover {
+  background-color: #21a1f1;
+  opacity: 1;
+}
+
+.summary {
+  margin-top: 20px;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.summary h2 {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .App-header {
+    width: 90%;
+    padding: 15px;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  .form-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  label {
+    width: 100%;
+    text-align: left;
+    padding-right: 0;
+    margin-bottom: 5px;
+  }
+
+  input,
+  select {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1rem;
+  }
+}
